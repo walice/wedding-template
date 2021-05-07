@@ -1,0 +1,26 @@
+url: https://walice.github.io/wedding-template
+# baseurl: /agency-jekyll-theme/
+
+# Site settings
+title: Cat + Dog
+email: petsgetmarried@wedding.com
+description: "Template for a wedding website."
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# social:
+  # - title: twitter
+  #   url: http://twitter.com/jekyllrb
+  # - title: facebook
+  #   url:
+  # - title: stack-overflow
+  #   url: http://stackoverflow.com/questions/tagged/jekyll
+  # - title: bitbucket 
+  #   url: http://bitbucket.org/jekyll
+  # - title: github
+  #   url: http://github.com/jekyll
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+include: ['_en_pages', '_fr_pages']

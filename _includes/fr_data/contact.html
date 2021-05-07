@@ -1,0 +1,63 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+    $(function(){
+    $(".ajaxForm").submit(function(e){
+        e.preventDefault();
+        var href = $(this).attr("action");
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: href,
+            data: $(this).serialize(),
+            success: function(response){
+                if(response.status == "success"){
+                    alert('Merci. Votre message a bien été envoyé.');
+                    window.location.href = 'https://alicelepissier.com/wedding-template/fr/#contact';
+                }else{
+                    alert("Une erreur est survenue: " + response.message);
+                }
+            }
+        });
+    });
+    });
+</script>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Contactez Nous</h2>
+                <h3 class="section-subheading text-muted">Ou envoyez nous un email à <a href="mailto:malixgetsmarried@gmail.com">petsgetmarried@gmail.com</a>.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Create your own form using FormCarry: https://formcarry.com/ -->
+                <form class="ajaxForm" action="YOUR_FORM_CARRY_ENDPOINT" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="control-group form-group">
+                                <input type="text" class="form-control" placeholder="Votre Nom" id="name" name="name" required data-validation-required-message="Renseignez votre prénom et votre nom.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group form-group">
+                                <input type="email" class="form-control" placeholder="Votre Email" id="email" name="email" required data-validation-required-message="Renseignez votre adresse email.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="control-group form-group">
+                                <textarea class="form-control" placeholder="Votre Message" id="message" name="message" required data-validation-required-message="Quel est votre message?"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-xl">Envoyer Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

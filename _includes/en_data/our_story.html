@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .rowstory {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .columnstory {
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 4px;
+        }
+
+        .columnstory img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+          .columnstory {
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .columnstory {
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+    </style>
+
+    <!-- Our Story Section -->
+    <section id="our_story" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Story</h2>
+                </div>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p class="largepad text-muted">Here is the story of our interspecies love. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac odio diam. Donec efficitur magna non viverra fermentum. Quisque aliquam arcu sit amet dolor euismod tempor. Maecenas vulputate rutrum tellus, a gravida magna condimentum ac. Maecenas euismod ipsum a nibh vehicula, ac euismod purus sagittis. Cras interdum sed est a gravida. Fusce rutrum dui quam. Maecenas finibus erat eget nunc tincidunt porta. Nullam viverra, orci in pulvinar interdum, velit tellus dapibus neque, in porta libero libero eu metus. In efficitur bibendum nulla, nec efficitur metus congue vel. Aliquam maximus vitae tortor at posuere. Vestibulum fringilla ullamcorper cursus. Cras pulvinar sem a dapibus mollis. Aliquam scelerisque nunc finibus sapien varius mollis. In dapibus, massa id iaculis tempus, est nulla condimentum dolor, a consequat lorem dolor ut metus. Sed ipsum diam, varius quis sagittis ut, congue volutpat justo. Pellentesque metus ante, sagittis ac dolor quis, dignissim egestas magna. Nullam et enim quis felis condimentum aliquet. Cras a sodales nibh. Sed euismod augue odio, nec ullamcorper nisl facilisis in. Vivamus id eros augue. Praesent dapibus sem id velit mattis vestibulum. Vestibulum id nulla vitae est rhoncus sollicitudin eget eu sapien. Curabitur sed orci orci. Cras a diam lacus. Praesent dui nulla, pharetra in ullamcorper eu, sagittis id purus. Morbi porta nunc vitae nisi varius fermentum. Nullam non iaculis quam. Cras et pellentesque metus. Aliquam sollicitudin leo eu orci.
+                </p>
+            </div>
+        </div>
+        <div class="rowstory">
+            <div class="columnstory">
+            	<img src="/img/story/col1-row1.jpg">
+                <img src="/img/story/col1-row2.jpg">
+                <img src="/img/story/col1-row3.jpg">
+                <img src="/img/story/col1-row4.jpg">
+            </div>
+            <div class="columnstory">
+                <img src="/img/story/col2-row1.jpg">
+                <img src="/img/story/col2-row2.jpg">
+                <img src="/img/story/col2-row3.jpg">
+                <img src="/img/story/col2-row4.jpg">
+            </div>
+            <div class="columnstory">
+            	<img src="/img/story/col3-row1.jpg">
+                <img src="/img/story/col3-row2.jpg">
+                <img src="/img/story/col3-row3.jpg">
+                <img src="/img/story/col3-row4.jpg">
+            </div>
+            <div class="columnstory">
+            	<img src="/img/story/col4-row1.jpg">
+                <img src="/img/story/col4-row2.jpg">
+                <img src="/img/story/col4-row3.jpg">
+                <img src="/img/story/col4-row4.jpg">
+            </div>
+        </div>
+    </section>
+</html>
