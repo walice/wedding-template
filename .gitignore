@@ -1,3 +1,5 @@
+.gitignore
+img/story/uncompressed
 _site
 *Unused
 
